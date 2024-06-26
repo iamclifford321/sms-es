@@ -5,7 +5,7 @@
   "category": "message"
   },
   "type": "REST",
-  "userInterfaces"::{
+  "userInterfaces":{
     "configInspector": {
       "size": "medium"
     }
