@@ -3,10 +3,12 @@ var connection = new Postmonger.Session();
 connection.trigger('ready');
 
 connection.on('initActivity', function(data){
-    document.getElementById('configuration').value = JSON.Stringify(data, null, 2)
+    console.log("data: ", data);
+    document.getElementById('configuration').value = JSON.Stringify(data)
 });
 
 connection.on('clickedNext', function(){
+    console.log("data: ", data);
     var configuration = JSON.parse(document.getElementById('configuration').value);
     connection.trigger('updateActivity', configuration);
 }); 
