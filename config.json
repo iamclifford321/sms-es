@@ -14,10 +14,10 @@
     "execute": {
       "inArguments": [
         {
-          "Email": "{{InteractionDefaults.Email}}"
+          "Email": "{{Contact.Attribute.JourneyEntrySource.Email}}"
         },
         {
-          "Name": "{{Contact.Default.Name}}"
+          "Name": "{{Contact.Attribute.JourneyEntrySource.Name}}"
         }
       ],
       "outArguments": [
