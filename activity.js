@@ -9,6 +9,6 @@ connection.on('initActivity', function(data){
 
 connection.on('clickedNext', function(){
     var configuration = JSON.parse(document.getElementById('configuration').value);
-    console.log(configuration)
-    connection.trigger('updateActivity', configuration);
+    console.log('configuration', configuration)
+    // connection.trigger('updateActivity', configuration);
 });
